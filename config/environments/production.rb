@@ -85,6 +85,9 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
+  
+  #设置rails，让其服务静态资源
+  config.serve_static_assets = true
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
