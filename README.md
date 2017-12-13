@@ -1,5 +1,7 @@
 # README
 
+部分gem已被注释，后面的group均是采用书中的内容
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
