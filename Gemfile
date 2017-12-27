@@ -13,6 +13,9 @@ gem 'rails', '~> 5.1.4'
 gem 'bootstrap-sass'
 #Using faker to create fake users
 gem 'faker'
+#Use 'will_paginate' and 'bootstrap-will_paginate' to divide users into different pages
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 # Use Puma as the app server
