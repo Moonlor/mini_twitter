@@ -1,4 +1,15 @@
-
+<% if signed_in? %>
+  <div class="row clearfix">
+    <aside class="col-md-4 column">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
 <div class="center hero-unit">
   <h1>Welcome to the Mini Twitter</h1>
   <h2>
@@ -9,3 +20,4 @@
   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 </div>
 <%= link_to image_tag("http://rubyonrails.org/images/rails-logo.svg", alt: "Rails"), 'http://rubyonrails.org/' %>
+<% end %>
