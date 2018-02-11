@@ -6,67 +6,45 @@ git_source(:github) do |repo_name|
 end
 
 #Use hash function to encrypt user's password
-gem 'bcrypt-ruby'
+gem 'bcrypt-ruby', '~>3.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.3.7'
 #Using faker to create fake users
-gem 'faker'
+gem 'faker', '~> 1.8.7'
 #Use 'will_paginate' and 'bootstrap-will_paginate' to divide users into different pages
-gem 'will_paginate'
-gem 'bootstrap-will_paginate'
-# Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
-# Use Puma as the app server
-#gem 'puma', '~> 3.7'
-# Use SCSS for stylesheets
-#gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-#gem 'uglifier', '>= 1.3.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use CoffeeScript for .coffee assets and views
-#gem 'coffee-rails', '~> 4.2'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-#gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-#gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'will_paginate', '~> 3.1.6'
+gem 'bootstrap-will_paginate', '~> 1.0.0'
+gem 'letter_avatar', '~>0.3.6'
+gem 'chinese_pinyin'
 
 group :development, :test do
-  gem 'listen'	
-  gem 'sqlite3'
-  gem 'rspec-rails'
-  gem 'rspec-its'
-  gem 'rails-controller-testing'
+  gem 'listen', '~>3.1.5'
+  gem 'sqlite3', '~>1.3.13'
+  gem 'rspec-rails', '~>3.7.2'
+  gem 'rspec-its', '~>1.2.0'
+  gem 'rails-controller-testing', '~>1.0.2'
 end
 
 group :test do
-  gem 'selenium-webdriver'
-  gem 'capybara'
-  gem 'factory_girl_rails'
+  gem 'selenium-webdriver', '~>3.8.0'
+  gem 'capybara', '~>2.16.1'
+  gem 'factory_girl_rails', '~>4.9.0'
 end
 
-gem 'sass-rails'
-gem 'uglifier'
-gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder'
+gem 'sass-rails', '~>5.0.7'
+gem 'uglifier', '~>4.0.2'
+gem 'coffee-rails', '~>4.2.2'
+gem 'jquery-rails', '~>4.3.1'
+gem 'turbolinks', '~>5.0.1'
+gem 'jbuilder', '~>2.7.0'
 
 group :doc do
   gem 'sdoc', require: false
 end
 group :production do
-  gem 'pg'
+  gem 'pg', '0.21.0'
 end
 
 

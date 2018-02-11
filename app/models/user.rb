@@ -42,6 +42,9 @@ class User < ApplicationRecord
     relationships.find_by(followed_id: other_user.id).destroy
   end
 
+  def username_for_avatar
+    Pinyin.t(self.name)
+  end
 
   private
     def create_remember_token

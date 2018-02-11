@@ -1,3 +1,5 @@
+include LetterAvatar::AvatarHelper
+
 module ApplicationHelper
 
   def full_title(page_title)
