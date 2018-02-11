@@ -19,7 +19,7 @@ class User < ApplicationRecord
   has_secure_password
 
   def feed
-    Micropost.where("user_id = ?", id)
+    Micropost.from_users_followed_by(self)
   end
 
   def User.new_remember_token
